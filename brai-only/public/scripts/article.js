@@ -1,15 +1,16 @@
 'use strict';
 var app = app || {};
 //wrap the contents of article.js in a IIFE and give the IIFE a pram of module
-(function articleIIFE(module){
 
-  module.Article= function(rawDataObj) {
+(function(module){
+
+  function Article(rawDataObj) {
     Object.keys(rawDataObj).forEach(key => this[key] = rawDataObj[key]);
   }
 
-  module.Article.all = [];
+  Article.all = [];
 
-  module.Article.prototype.toHtml = function() {
+  Article.prototype.toHtml = function() {
     var template = Handlebars.compile($('#article-template').text());
 
     this.daysAgo = parseInt((new Date() - new Date(this.published_on))/60/60/24/1000);
@@ -19,7 +20,7 @@ var app = app || {};
     return template(this);
   };
 
-  module.Article.loadAll = articleData => {
+  Article.loadAll = articleData => {
     articleData.sort((a,b) => (new Date(b.published_on)) - (new Date(a.published_on)))
 
     //  OLD forEach():
@@ -29,7 +30,7 @@ var app = app || {};
     app.Article.all = articleData.map(articleObject => new module.Article(articleObject));
   };
 
-  module.Article.fetchAll = callback => {
+  Article.fetchAll = callback => {
     $.get('/articles')
       .then(results => {
         module.Article.loadAll(results);
@@ -38,13 +39,13 @@ var app = app || {};
   };
 
   //Here use .map() and .reduce() to get a count of all words in articles.
-  module.Article.numWordsAll = () => {
+  Article.numWordsAll = () => {
     return app.Article.all.map(article =>article.body.split(' ').length).reduce( (acc, cur) => {
       return acc + cur;
     });
   };
   //Here we used .map() and .reduce() to produce an array of unique authors
-  module.Article.allAuthors = () => {
+  Article.allAuthors = () => {
     return app.Article.all.map(article =>article.author).sort().reduce( (acc, cur)=>{
       const length = acc.length;
       if(length === 0 || acc[length - 1] !== cur) {
@@ -54,7 +55,7 @@ var app = app || {};
     }, []);
   };
 
-  module.Article.numWordsByAuthor = () => {
+  Article.numWordsByAuthor = () => {
     return app.Article.allAuthors().map(author => {
       var object = {};
       object.author = author;
@@ -63,7 +64,7 @@ var app = app || {};
     });
   };
 
-  module.Article.truncateTable = callback => {
+  Article.truncateTable = callback => {
     $.ajax({
       url: '/articles',
       method: 'DELETE',
@@ -73,14 +74,14 @@ var app = app || {};
       .then(callback);
   };
 
-  module.Article.prototype.insertRecord = function(callback) {
+  Article.prototype.insertRecord = function(callback) {
   // REVIEW: Why can't we use an arrow function here for .insertRecord()?
     $.post('/articles', {author: this.author, author_url: this.author_url, body: this.body, category: this.category, published_on: this.published_on, title: this.title})
       .then(console.log)
       .then(callback);
   };
 
-  module.Article.prototype.deleteRecord = function(callback) {
+  Article.prototype.deleteRecord = function(callback) {
     $.ajax({
       url: `/articles/${this.article_id}`,
       method: 'DELETE'
@@ -89,7 +90,7 @@ var app = app || {};
       .then(callback);
   };
 
-  module.Article.prototype.updateRecord = function(callback) {
+  Article.prototype.updateRecord = function(callback) {
     $.ajax({
       url: `/articles/${this.article_id}`,
       method: 'PUT',
@@ -106,4 +107,5 @@ var app = app || {};
       .then(console.log)
       .then(callback);
   };
+  module.Article = Article;
 })(app);

@@ -584,4 +584,270 @@ Emitted 'error' event at:
     at startup (internal/bootstrap/node.js:240:19)
     at bootstrapNodeJSCore (internal/bootstrap/node.js:564:3)
 [31m[nodemon] app crashed - waiting for file changes before starting...[39m
-^L  ¬ ^C[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;..ing/brai-only]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows/code301/10-lab/10-functional-programming/brai-only[0m[27m[24m[J[01;31m➜  [36mbrai-only[00m [01;34mgit:([31mfunctionalProgram[34m) [33m✗[00m [K[?1h=[?2004h
+^L  ¬ ^C[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;..ing/brai-only]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows/code301/10-lab/10-functional-programming/brai-only[0m[27m[24m[J[01;31m➜  [36mbrai-only[00m [01;34mgit:([31mfunctionalProgram[34m) [33m✗[00m [K[?1h=[?2004hggit add .[?1l>[?2004l
+]2;git add .]1;git[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;..ing/brai-only]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows/code301/10-lab/10-functional-programming/brai-only[0m[27m[24m[J[01;32m➜  [36mbrai-only[00m [01;34mgit:([31mfunctionalProgram[34m) [33m✗[00m [K[?1h=[?2004hggit p status[?1l>[?2004l
+]2;git status]1;gitOn branch functionalProgram
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mrenamed:    .eslintrc -> .eslintrc.json[m
+	[32mnew file:   LICENSE[m
+	[32mnew file:   README.md[m
+	[32mnew file:   package-lock.json[m
+	[32mmodified:   package.json[m
+	[32mmodified:   public/admin.html[m
+	[32mmodified:   public/index.html[m
+	[32mmodified:   public/new.html[m
+	[32mmodified:   public/scripts/article.js[m
+	[32mmodified:   public/scripts/articleView.js[m
+	[32mnew file:   public/typescript[m
+	[32mmodified:   server.js[m
+
+[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;..ing/brai-only]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows/code301/10-lab/10-functional-programming/brai-only[0m[27m[24m[J[01;32m➜  [36mbrai-only[00m [01;34mgit:([31mfunctionalProgram[34m) [33m✗[00m [K[?1h=[?2004hggit it   t commit -m '  'added code and readme to   '[?1l>[?2004l
+]2;git commit -m 'added code and readme']1;git[functionalProgram 20841bd] added code and readme
+ 12 files changed, 1650 insertions(+), 249 deletions(-)
+ rename brai-only/{.eslintrc => .eslintrc.json} (100%)
+ create mode 100644 brai-only/LICENSE
+ create mode 100644 brai-only/README.md
+ create mode 100644 brai-only/package-lock.json
+ rewrite brai-only/public/scripts/article.js (96%)
+ rewrite brai-only/public/scripts/articleView.js (98%)
+ create mode 100644 brai-only/public/typescript
+[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;..ing/brai-only]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows/code301/10-lab/10-functional-programming/brai-only[0m[27m[24m[J[01;32m➜  [36mbrai-only[00m [01;34mgit:([31mfunctionalProgram[34m)[00m [K[?1h=[?2004hggit pus h origin finc   unctionalProgram[1m [0m[0m [?1l>[?2004l
+]2;git push origin functionalProgram]1;gitCounting objects: 16, done.
+Delta compression using up to 4 threads.
+Compressing objects:   6% (1/16)   Compressing objects:  12% (2/16)   Compressing objects:  18% (3/16)   Compressing objects:  25% (4/16)   Compressing objects:  31% (5/16)   Compressing objects:  37% (6/16)   Compressing objects:  43% (7/16)   Compressing objects:  50% (8/16)   Compressing objects:  56% (9/16)   Compressing objects:  62% (10/16)   Compressing objects:  68% (11/16)   Compressing objects:  75% (12/16)   Compressing objects:  81% (13/16)   Compressing objects:  87% (14/16)   Compressing objects:  93% (15/16)   Compressing objects: 100% (16/16)   Compressing objects: 100% (16/16), done.
+Writing objects:   6% (1/16)   Writing objects:  12% (2/16)   Writing objects:  18% (3/16)   Writing objects:  25% (4/16)   Writing objects:  31% (5/16)   Writing objects:  37% (6/16)   Writing objects:  43% (7/16)   Writing objects:  50% (8/16)   Writing objects:  56% (9/16)   Writing objects:  62% (10/16)   Writing objects:  68% (11/16)   Writing objects:  75% (12/16)   Writing objects:  81% (13/16)   Writing objects:  87% (14/16)   Writing objects:  93% (15/16)   Writing objects: 100% (16/16)   Writing objects: 100% (16/16), 21.20 KiB | 5.30 MiB/s, done.
+Total 16 (delta 8), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/8)   [Kremote: Resolving deltas:  12% (1/8)   [Kremote: Resolving deltas:  25% (2/8)   [Kremote: Resolving deltas:  37% (3/8)   [Kremote: Resolving deltas:  50% (4/8)   [Kremote: Resolving deltas:  62% (5/8)   [Kremote: Resolving deltas:  75% (6/8)   [Kremote: Resolving deltas:  87% (7/8)   [Kremote: Resolving deltas: 100% (8/8)   [Kremote: Resolving deltas: 100% (8/8), completed with 8 local objects.[K
+To https://github.com/ashabrai/10-functional-programming.git
+   31ba74d..20841bd  functionalProgram -> functionalProgram
+[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;..ing/brai-only]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows/code301/10-lab/10-functional-programming/brai-only[0m[27m[24m[J[01;32m➜  [36mbrai-only[00m [01;34mgit:([31mfunctionalProgram[34m) [33m✗[00m [K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsLICENSE           [1m[36mnode_modules[39;49m[0m      package.json      server.js
+README.md         package-lock.json [1m[36mpublic[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;..ing/brai-only]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows/code301/10-lab/10-functional-programming/brai-only[0m[27m[24m[J[01;32m➜  [36mbrai-only[00m [01;34mgit:([31mfunctionalProgram[34m) [33m✗[00m [K[?1h=[?2004hccd[?1l>[?2004l
+]2;cd]1;cd[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;~]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen[0m[27m[24m[J[01;32m➜  [36m~[00m [K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;ls[1m[36m01-colors[39;49m[0m             IMG_2277 2.JPG        [1m[36mfor[39;49m[0m
+ALTER                 [1m[36mLibrary[39;49m[0m               [1m[36mlab[39;49m[0m
+[1m[36mApplications[39;49m[0m          [1m[36mMovies[39;49m[0m                [1m[36mnode_modules[39;49m[0m
+[1m[36mCodeFellows[39;49m[0m           [1m[36mMusic[39;49m[0m                 package-lock.json
+[1m[36mDesktop[39;49m[0m               [1m[36mPictures[39;49m[0m              package.json
+[1m[36mDocuments[39;49m[0m             [1m[36mPublic[39;49m[0m                postgresql_10.app.zip
+[1m[36mDownloads[39;49m[0m             [1m[36mborderify[39;49m[0m             [1m[36mtemp[39;49m[0m
+[1m[36mFUNCTIONS[39;49m[0m             [1m[36mdemos[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;~]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen[0m[27m[24m[J[01;32m➜  [36m~[00m [K[?1h=[?2004hccodefellows[?1l>[?2004l
+]2;codefellows]1;codefellows[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;~/codefellows]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows[0m[27m[24m[J[01;32m➜  [36mcodefellows[00m [K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;ls[1m[36mcode201[39;49m[0m        [1m[36mcode301[39;49m[0m        [1m[36mdemos[39;49m[0m          [1m[36mfinalextention[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;~/codefellows]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows[0m[27m[24m[J[01;32m➜  [36mcodefellows[00m [K[?1h=[?2004hccode301 1[?1l>[?2004l
+]2;code301]1;code301[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;..llows/code301]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows/code301[0m[27m[24m[J[01;32m➜  [36mcode301[00m [K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;ls[1m[36m00-lab[39;49m[0m                    [1m[36m05-lab[39;49m[0m                    [1m[36m301GroupProject1[39;49m[0m
+[1m[36m01-lab[39;49m[0m                    [1m[36m07-lab[39;49m[0m                    [1m[36mcodewars301[39;49m[0m
+[1m[36m02-lab[39;49m[0m                    [1m[36m07-nodejs-npm-express[39;49m[0m     [1m[36mlab-06[39;49m[0m
+[1m[36m03-lab[39;49m[0m                    [1m[36m08-sql-intro-and-postgres[39;49m[0m [1m[36mmood-fellows[39;49m[0m
+[1m[36m04-lab[39;49m[0m                    [1m[36m10-lab[39;49m[0m                    [1m[36mui-challenge-2[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;..llows/code301]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows/code301[0m[27m[24m[J[01;32m➜  [36mcode301[00m [K[?1h=[?2004huui
+[J[0mUID              [J[1;31mui-challenge-2[0m/[J[A[0m[27m[24m[11Cui[KUID[1m=[0m
+[J[7mUID            [0m  [J[1;31mui-challenge-2[0m/[J[A[0m[27m[24m[11CUID[1m=[0m[K
+[7mUID            [0m  [7mUID            [0m  [A[0m[27m[24m[11CUID[1m=[0m[Kui-[0mchallenge-2[1m/[0m
+[17C[7mui-challenge-2/[0mUID              [A[0m[27m[24m[11Cui-challenge-2[1m/[0m[K
+[J[A[26C[0m [?1l>[?2004l
+[J]2;ui-challenge-2]1;ui-challenge-2[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;..i-challenge-2]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows/code301/ui-challenge-2[0m[27m[24m[J[01;32m➜  [36mui-challenge-2[00m [01;34mgit:([31maddSprites[34m)[00m [K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsLICENSE    README.md  app.js     [1m[36mimgs[39;49m[0m       index.html style.css
+[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;..i-challenge-2]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows/code301/ui-challenge-2[0m[27m[24m[J[01;32m➜  [36mui-challenge-2[00m [01;34mgit:([31maddSprites[34m)[00m [K[?1h=[?2004hccode .[?1l>[?2004l
+]2;code .]1;code[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;..i-challenge-2]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows/code301/ui-challenge-2[0m[27m[24m[J[01;32m➜  [36mui-challenge-2[00m [01;34mgit:([31maddSprites[34m)[00m [K[?1h=[?2004hllive-server[?1l>[?2004l
+]2;live-server]1;live-server[32mServing "/Users/ashabraifrauen/CodeFellows/code301/ui-challenge-2" at http://127.0.0.1:8080[39m
+[36mReady for changes[39m
+[0mGET /styles/reset.css [33m404 [0m20.361 ms - 29[0m
+[0mGET /styles/base.css [33m404 [0m26.411 ms - 28[0m
+[0mGET /styles/form-styles.css [33m404 [0m27.797 ms - 35[0m
+[35mCSS change detected[39m /Users/ashabraifrauen/CodeFellows/code301/ui-challenge-2/base.css
+[0mGET /styles/reset.css?_cacheOverride=1535821206808 [33m404 [0m6.583 ms - 58[0m
+[0mGET /styles/base.css?_cacheOverride=1535821206808 [33m404 [0m6.499 ms - 57[0m
+[0mGET /styles/form-styles.css?_cacheOverride=1535821206809 [33m404 [0m6.028 ms - 64[0m
+[35mCSS change detected[39m /Users/ashabraifrauen/CodeFellows/code301/ui-challenge-2/base.css
+[0mGET /styles/reset.css?_cacheOverride=1535821210060 [33m404 [0m1.305 ms - 58[0m
+[0mGET /styles/base.css?_cacheOverride=1535821210060 [33m404 [0m1.315 ms - 57[0m
+[0mGET /styles/form-styles.css?_cacheOverride=1535821210060 [33m404 [0m0.725 ms - 64[0m
+[35mCSS change detected[39m /Users/ashabraifrauen/CodeFellows/code301/ui-challenge-2/form.css
+[0mGET /styles/reset.css?_cacheOverride=1535821240033 [33m404 [0m0.569 ms - 58[0m
+[0mGET /styles/base.css?_cacheOverride=1535821240035 [33m404 [0m0.840 ms - 57[0m
+[0mGET /styles/form-styles.css?_cacheOverride=1535821240036 [33m404 [0m0.597 ms - 64[0m
+[35mCSS change detected[39m /Users/ashabraifrauen/CodeFellows/code301/ui-challenge-2/form.css
+[0mGET /styles/reset.css?_cacheOverride=1535821244244 [33m404 [0m0.693 ms - 58[0m
+[0mGET /styles/base.css?_cacheOverride=1535821244246 [33m404 [0m0.696 ms - 57[0m
+[0mGET /styles/form-styles.css?_cacheOverride=1535821244246 [33m404 [0m0.772 ms - 64[0m
+[35mCSS change detected[39m /Users/ashabraifrauen/CodeFellows/code301/ui-challenge-2/reset.css
+[0mGET /styles/reset.css?_cacheOverride=1535821256418 [33m404 [0m1.317 ms - 58[0m
+[0mGET /styles/base.css?_cacheOverride=1535821256419 [33m404 [0m1.362 ms - 57[0m
+[0mGET /styles/form-styles.css?_cacheOverride=1535821256419 [33m404 [0m1.093 ms - 64[0m
+[35mCSS change detected[39m /Users/ashabraifrauen/CodeFellows/code301/ui-challenge-2/reset.css
+[0mGET /styles/reset.css?_cacheOverride=1535821270093 [33m404 [0m0.601 ms - 58[0m
+[0mGET /styles/base.css?_cacheOverride=1535821270095 [33m404 [0m1.533 ms - 57[0m
+[0mGET /styles/form-styles.css?_cacheOverride=1535821270095 [33m404 [0m1.210 ms - 64[0m
+[0mGET /styles/reset.css [33m404 [0m0.740 ms - 29[0m
+[0mGET /styles/base.css [33m404 [0m1.793 ms - 28[0m
+[0mGET /styles/form-styles.css [33m404 [0m1.341 ms - 35[0m
+^C
+[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;..i-challenge-2]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows/code301/ui-challenge-2[0m[27m[24m[J[01;31m➜  [36mui-challenge-2[00m [01;34mgit:([31maddSprites[34m) [33m✗[00m [K[?1h=[?2004hggit add .  .[?1l>[?2004l
+]2;git add .]1;git[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;..i-challenge-2]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows/code301/ui-challenge-2[0m[27m[24m[J[01;32m➜  [36mui-challenge-2[00m [01;34mgit:([31maddSprites[34m) [33m✗[00m [K[?1h=[?2004hggit status[?1l>[?2004l
+]2;git status]1;gitOn branch addSprites
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mnew file:   .eslintrc[m
+	[32mmodified:   README.md[m
+	[32mdeleted:    app.js[m
+	[32mnew file:   base.css[m
+	[32mnew file:   form.css[m
+	[32mmodified:   index.html[m
+	[32mnew file:   reset.css[m
+
+[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;..i-challenge-2]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows/code301/ui-challenge-2[0m[27m[24m[J[01;32m➜  [36mui-challenge-2[00m [01;34mgit:([31maddSprites[34m) [33m✗[00m [K[?1h=[?2004hggit cmm  ommit -m[?1l>[?2004l
+]2;git commit -m]1;giterror: switch `m' requires a value
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup <commit>      use autosquash formatted message to fixup specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    -s, --signoff         add Signed-off-by:
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <default>   how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+
+[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;..i-challenge-2]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows/code301/ui-challenge-2[0m[27m[24m[J[01;31m➜  [36mui-challenge-2[00m [01;34mgit:([31maddSprites[34m) [33m✗[00m [K[?1h=[?2004hgit commit -m 'a correct ed the css and html'[?1l>[?2004l
+]2;git commit -m 'corrected the css and html']1;git[addSprites 5fe6dd3] corrected the css and html
+ 7 files changed, 281 insertions(+), 95 deletions(-)
+ create mode 100644 .eslintrc
+ rewrite README.md (100%)
+ delete mode 100644 app.js
+ create mode 100644 base.css
+ create mode 100644 form.css
+ rewrite index.html (96%)
+ create mode 100644 reset.css
+[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;..i-challenge-2]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows/code301/ui-challenge-2[0m[27m[24m[J[01;32m➜  [36mui-challenge-2[00m [01;34mgit:([31maddSprites[34m)[00m [K[?1h=[?2004hggit push origin addSprites[1m [0m[0m [?1l>[?2004l
+]2;git push origin addSprites]1;gitCounting objects: 8, done.
+Delta compression using up to 4 threads.
+Compressing objects:  12% (1/8)   Compressing objects:  25% (2/8)   Compressing objects:  37% (3/8)   Compressing objects:  50% (4/8)   Compressing objects:  62% (5/8)   Compressing objects:  75% (6/8)   Compressing objects:  87% (7/8)   Compressing objects: 100% (8/8)   Compressing objects: 100% (8/8), done.
+Writing objects:  12% (1/8)   Writing objects:  25% (2/8)   Writing objects:  37% (3/8)   Writing objects:  50% (4/8)   Writing objects:  62% (5/8)   Writing objects:  75% (6/8)   Writing objects:  87% (7/8)   Writing objects: 100% (8/8)   Writing objects: 100% (8/8), 3.23 KiB | 1.61 MiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0)
+To https://github.com/ashabrai/ui-challenge-2.git
+   033a4e4..5fe6dd3  addSprites -> addSprites
+[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;..i-challenge-2]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows/code301/ui-challenge-2[0m[27m[24m[J[01;32m➜  [36mui-challenge-2[00m [01;34mgit:([31maddSprites[34m)[00m [K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsLICENSE    base.css   [1m[36mimgs[39;49m[0m       reset.css
+README.md  form.css   index.html style.css
+[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;..i-challenge-2]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows/code301/ui-challenge-2[0m[27m[24m[J[01;32m➜  [36mui-challenge-2[00m [01;34mgit:([31maddSprites[34m)[00m [K[?1h=[?2004hccd[?1l>[?2004l
+]2;cd]1;cd[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;~]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen[0m[27m[24m[J[01;32m➜  [36m~[00m [K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;ls[1m[36m01-colors[39;49m[0m             IMG_2277 2.JPG        [1m[36mfor[39;49m[0m
+ALTER                 [1m[36mLibrary[39;49m[0m               [1m[36mlab[39;49m[0m
+[1m[36mApplications[39;49m[0m          [1m[36mMovies[39;49m[0m                [1m[36mnode_modules[39;49m[0m
+[1m[36mCodeFellows[39;49m[0m           [1m[36mMusic[39;49m[0m                 package-lock.json
+[1m[36mDesktop[39;49m[0m               [1m[36mPictures[39;49m[0m              package.json
+[1m[36mDocuments[39;49m[0m             [1m[36mPublic[39;49m[0m                postgresql_10.app.zip
+[1m[36mDownloads[39;49m[0m             [1m[36mborderify[39;49m[0m             [1m[36mtemp[39;49m[0m
+[1m[36mFUNCTIONS[39;49m[0m             [1m[36mdemos[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;~]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen[0m[27m[24m[J[01;32m➜  [36m~[00m [K[?1h=[?2004hccodefellows[?1l>[?2004l
+]2;codefellows]1;codefellows[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;~/codefellows]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows[0m[27m[24m[J[01;32m➜  [36mcodefellows[00m [K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;ls[1m[36mcode201[39;49m[0m        [1m[36mcode301[39;49m[0m        [1m[36mdemos[39;49m[0m          [1m[36mfinalextention[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;~/codefellows]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows[0m[27m[24m[J[01;32m➜  [36mcodefellows[00m [K[?1h=[?2004hccode301[?1l>[?2004l
+]2;code301]1;code301[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;..llows/code301]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows/code301[0m[27m[24m[J[01;32m➜  [36mcode301[00m [K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;ls[1m[36m00-lab[39;49m[0m                    [1m[36m05-lab[39;49m[0m                    [1m[36m301GroupProject1[39;49m[0m
+[1m[36m01-lab[39;49m[0m                    [1m[36m07-lab[39;49m[0m                    [1m[36mcodewars301[39;49m[0m
+[1m[36m02-lab[39;49m[0m                    [1m[36m07-nodejs-npm-express[39;49m[0m     [1m[36mlab-06[39;49m[0m
+[1m[36m03-lab[39;49m[0m                    [1m[36m08-sql-intro-and-postgres[39;49m[0m [1m[36mmood-fellows[39;49m[0m
+[1m[36m04-lab[39;49m[0m                    [1m[36m10-lab[39;49m[0m                    [1m[36mui-challenge-2[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;..llows/code301]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows/code301[0m[27m[24m[J[01;32m➜  [36mcode301[00m [K[?1h=[?2004h008-sql-intro-and-postgres[1m/[0m[0m [?1l>[?2004l
+]2;08-sql-intro-and-postgres]1;08-sql-intro-and-postgres[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;..-and-postgres]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows/code301/08-sql-intro-and-postgres[0m[27m[24m[J[01;32m➜  [36m08-sql-intro-and-postgres[00m [01;34mgit:([31mcandice-brai-jason[34m) [33m✗[00m [K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;ls08-CRUD-testing.md       SQL-SETUP.md             full-stack-diagram.png
+PULL_REQUEST_TEMPLATE.md [1m[36mcandice-brai-jason[39;49m[0m       [1m[36mstarter-code[39;49m[0m
+README.md                [1m[36mcheatsheets[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;..-and-postgres]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows/code301/08-sql-intro-and-postgres[0m[27m[24m[J[01;32m➜  [36m08-sql-intro-and-postgres[00m [01;34mgit:([31mcandice-brai-jason[34m) [33m✗[00m [K[?1h=[?2004hccandice-brai-jason[1m/[0m[0m [?1l>[?2004l
+]2;candice-brai-jason]1;candice-brai-jason[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;..ce-brai-jason]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows/code301/08-sql-intro-and-postgres/candice-brai-jason[0m[27m[24m[J[01;32m➜  [36mcandice-brai-jason[00m [01;34mgit:([31mcandice-brai-jason[34m) [33m✗[00m [K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsPULL_REQUEST_TEMPLATE.md package-lock.json        server.js
+README.md                package.json
+[1m[36mnode_modules[39;49m[0m             [1m[36mpublic[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;..ce-brai-jason]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows/code301/08-sql-intro-and-postgres/candice-brai-jason[0m[27m[24m[J[01;32m➜  [36mcandice-brai-jason[00m [01;34mgit:([31mcandice-brai-jason[34m) [33m✗[00m [K[?1h=[?2004hccode .[?1l>[?2004l
+]2;code .]1;code[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;..ce-brai-jason]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows/code301/08-sql-intro-and-postgres/candice-brai-jason[0m[27m[24m[J[01;32m➜  [36mcandice-brai-jason[00m [01;34mgit:([31mcandice-brai-jason[34m) [33m✗[00m [K[?1h=[?2004hggit checkout -b new   'r newreadme'[?1l>[?2004l
+]2;git checkout -b 'newreadme']1;gitM	candice-brai-jason/README.md
+M	candice-brai-jason/public/scripts/article.js
+M	candice-brai-jason/server.js
+Switched to a new branch 'newreadme'
+[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;..ce-brai-jason]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows/code301/08-sql-intro-and-postgres/candice-brai-jason[0m[27m[24m[J[01;32m➜  [36mcandice-brai-jason[00m [01;34mgit:([31mnewreadme[34m) [33m✗[00m [K[?1h=[?2004hlls[?1l>[?2004l
+]2;ls -G]1;lsPULL_REQUEST_TEMPLATE.md package-lock.json        server.js
+README.md                package.json
+[1m[36mnode_modules[39;49m[0m             [1m[36mpublic[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;..ce-brai-jason]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows/code301/08-sql-intro-and-postgres/candice-brai-jason[0m[27m[24m[J[01;32m➜  [36mcandice-brai-jason[00m [01;34mgit:([31mnewreadme[34m) [33m✗[00m [K[?1h=[?2004hccode .  .[?1l>[?2004l
+]2;code .]1;code[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;..ce-brai-jason]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows/code301/08-sql-intro-and-postgres/candice-brai-jason[0m[27m[24m[J[01;32m➜  [36mcandice-brai-jason[00m [01;34mgit:([31mnewreadme[34m) [33m✗[00m [K[?1h=[?2004hggit add .[?1l>[?2004l
+]2;git add .]1;git[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;..ce-brai-jason]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows/code301/08-sql-intro-and-postgres/candice-brai-jason[0m[27m[24m[J[01;32m➜  [36mcandice-brai-jason[00m [01;34mgit:([31mnewreadme[34m) [33m✗[00m [K[?1h=[?2004hggit status[?1l>[?2004l
+]2;git status]1;gitOn branch newreadme
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mmodified:   README.md[m
+	[32mmodified:   public/scripts/article.js[m
+	[32mmodified:   server.js[m
+
+[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;..ce-brai-jason]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows/code301/08-sql-intro-and-postgres/candice-brai-jason[0m[27m[24m[J[01;32m➜  [36mcandice-brai-jason[00m [01;34mgit:([31mnewreadme[34m) [33m✗[00m [K[?1h=[?2004hggit commit  -'  -m 'added im  readme with the upd [Kaate  a [K[A[79C[K[1B[K[A[79C                         [?1l>[?2004l[1B]2;git comm]1;gitgit: 'comm' is not a git command. See 'git --help'.
+
+The most similar commands are
+	commit
+	column
+	home
+[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;..ce-brai-jason]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows/code301/08-sql-intro-and-postgres/candice-brai-jason[0m[27m[24m[J[01;31m➜  [36mcandice-brai-jason[00m [01;34mgit:([31mnewreadme[34m) [33m✗[00m [K[?1h=[?2004hggit status[?1l>[?2004l
+]2;git status]1;gitOn branch newreadme
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mmodified:   README.md[m
+	[32mmodified:   public/scripts/article.js[m
+	[32mmodified:   server.js[m
+
+[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;..ce-brai-jason]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows/code301/08-sql-intro-and-postgres/candice-brai-jason[0m[27m[24m[J[01;32m➜  [36mcandice-brai-jason[00m [01;34mgit:([31mnewreadme[34m) [33m✗[00m [K[?1h=[?2004hggit commit -m 'added new readme with the [K  path owhere       ehr   '[?1l>[?2004l
+]2;git commit -m 'added new readme with the path']1;git[newreadme ec6979a] added new readme with the path
+ 3 files changed, 50 insertions(+), 6 deletions(-)
+[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;..ce-brai-jason]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows/code301/08-sql-intro-and-postgres/candice-brai-jason[0m[27m[24m[J[01;32m➜  [36mcandice-brai-jason[00m [01;34mgit:([31mnewreadme[34m)[00m [K[?1h=[?2004hggit push orii gin     igin newreadme[1m [0m[0m [?1l>[?2004l
+]2;git push origin newreadme]1;gitCounting objects: 8, done.
+Delta compression using up to 4 threads.
+Compressing objects:  12% (1/8)   Compressing objects:  25% (2/8)   Compressing objects:  37% (3/8)   Compressing objects:  50% (4/8)   Compressing objects:  62% (5/8)   Compressing objects:  75% (6/8)   Compressing objects:  87% (7/8)   Compressing objects: 100% (8/8)   Compressing objects: 100% (8/8), done.
+Writing objects:  12% (1/8)   Writing objects:  25% (2/8)   Writing objects:  37% (3/8)   Writing objects:  50% (4/8)   Writing objects:  62% (5/8)   Writing objects:  75% (6/8)   Writing objects:  87% (7/8)   Writing objects: 100% (8/8)   Writing objects: 100% (8/8), 2.12 KiB | 2.12 MiB/s, done.
+Total 8 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/5)   [Kremote: Resolving deltas:  20% (1/5)   [Kremote: Resolving deltas:  40% (2/5)   [Kremote: Resolving deltas:  60% (3/5)   [Kremote: Resolving deltas:  80% (4/5)   [Kremote: Resolving deltas: 100% (5/5)   [Kremote: Resolving deltas: 100% (5/5), completed with 5 local objects.[K
+To https://github.com/canned-ice/08-sql-intro-and-postgres.git
+ * [new branch]      newreadme -> newreadme
+[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;..ce-brai-jason]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows/code301/08-sql-intro-and-postgres/candice-brai-jason[0m[27m[24m[J[01;32m➜  [36mcandice-brai-jason[00m [01;34mgit:([31mnewreadme[34m)[00m [K[?1h=[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;..ce-brai-jason]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows/code301/08-sql-intro-and-postgres/candice-brai-jason[0m[27m[24m[J[01;31m➜  [36mcandice-brai-jason[00m [01;34mgit:([31mnewreadme[34m)[00m [K[?1h=[?2004hç [?2004l
+[1m[7m%[27m[1m[0m                                                                                ]2;ashabraifrauen@Ritas-MacBook-Pro]1;..ce-brai-jason]7;file://Ritas-MacBook-Pro.local/Users/ashabraifrauen/codefellows/code301/08-sql-intro-and-postgres/candice-brai-jason[0m[27m[24m[J[01;31m➜  [36mcandice-brai-jason[00m [01;34mgit:([31mnewreadme[34m)[00m [K[?1h=[?2004h
